@@ -19,8 +19,6 @@ room_assignments
 end
 
 def printer
-  list=batch_badge_creator(attendees)
-  rooms=assign_rooms(attendees)
-  list.each do |speakers| puts speakers
- end 
+print batch_badge_creator(attendees)
+print assign_rooms(attendees)
 end
